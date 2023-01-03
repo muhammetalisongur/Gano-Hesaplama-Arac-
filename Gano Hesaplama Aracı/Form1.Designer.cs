@@ -44,10 +44,10 @@
             // 
             // btnRemoveAll
             // 
-            this.btnRemoveAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRemoveAll.Location = new System.Drawing.Point(177, 244);
+            this.btnRemoveAll.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold);
+            this.btnRemoveAll.Location = new System.Drawing.Point(185, 238);
             this.btnRemoveAll.Name = "btnRemoveAll";
-            this.btnRemoveAll.Size = new System.Drawing.Size(127, 39);
+            this.btnRemoveAll.Size = new System.Drawing.Size(121, 39);
             this.btnRemoveAll.TabIndex = 29;
             this.btnRemoveAll.Text = "Temizle";
             this.btnRemoveAll.UseVisualStyleBackColor = true;
@@ -55,10 +55,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAdd.Location = new System.Drawing.Point(26, 244);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Location = new System.Drawing.Point(34, 238);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(127, 39);
+            this.btnAdd.Size = new System.Drawing.Size(121, 39);
             this.btnAdd.TabIndex = 28;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
