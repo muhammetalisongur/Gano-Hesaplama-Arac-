@@ -24,20 +24,48 @@ namespace Gano_Hesaplama_Aracı
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
+
+            textBox1.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
+            textBox3.BackColor = Color.White;
+            textBox4.BackColor = Color.White;
+            textBox5.BackColor = Color.White;
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            
 
 
-            form.label6.Text = textBox1.Text;
-            form.label7.Text = textBox2.Text;
-            form.label8.Text = textBox3.Text;
-            form.label9.Text = textBox4.Text;
-            form.label10.Text = textBox5.Text + ".Sınıf";
+            if (
+     textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" ||
+     textBox1.Text == String.Empty || textBox2.Text == String.Empty || textBox3.Text == String.Empty || 
+     textBox4.Text == String.Empty || textBox5.Text == String.Empty )
+            {
+                textBox1.BackColor = Color.Yellow;
+                textBox2.BackColor = Color.Yellow;
+                textBox3.BackColor = Color.Yellow;
+                textBox4.BackColor = Color.Yellow;
+                textBox5.BackColor = Color.Yellow;
+                MessageBox.Show("Sarı Rekli Alanları Boş Geçemezsiniz", "Boş Alan Hatası",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
+{
+                this.Visible = false;
+                Form2 form2 = new Form2();
+                form2.label6.Text = textBox1.Text;
+                form2.label7.Text = textBox2.Text;
+                form2.label8.Text = textBox3.Text;
+                form2.label9.Text = textBox4.Text;
+                form2.label10.Text = textBox5.Text + ".Sınıf";
 
-            form.ShowDialog();
+                form2.ShowDialog();
+
+               
+            }
+
+
         }
 
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
@@ -117,5 +145,7 @@ namespace Gano_Hesaplama_Aracı
 
             }
         }
+
+      
     }
 }

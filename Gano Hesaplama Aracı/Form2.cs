@@ -63,6 +63,7 @@ namespace Gano_Hesaplama_Aracı
 
         private void Form2_Load(object sender, EventArgs e)
         {
+           
             listView1.Columns.Add("Ders Adı", 200);
             listView1.Columns.Add("Kredi", 50);
             listView1.Columns.Add("Vize", 50);
@@ -332,5 +333,7 @@ namespace Gano_Hesaplama_Aracı
 
 
         }
+
+       
     }
 }
